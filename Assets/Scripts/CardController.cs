@@ -9,6 +9,10 @@ public class CardController : MonoBehaviour
     [SerializeField]
     private List<GameObject> prefabs;
 
+    public int MaxCardTypes => prefabs.Count;
+
+    public float CardSize = 2f;
+
     public UnityEvent<CardController> OnClicked;
 
     public int CardType = -1;
